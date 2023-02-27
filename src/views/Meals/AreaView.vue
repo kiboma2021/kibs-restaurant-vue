@@ -1,10 +1,16 @@
 <template>
     <h1>Areas</h1>
 
-    <div v-for="area in areas.meals" :key="area.strArea">
-        {{ area.strArea}}
-    
+    <div v-if="areas.meals">
+        <div v-for="area in areas.meals" :key="area.strArea">
+            {{ area.strArea}}
+        </div>        
     </div>
+    <div v-else>
+        <h5>Loading ...</h5>
+    </div>
+
+
   
 </template>
 
