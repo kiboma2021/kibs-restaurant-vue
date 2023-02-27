@@ -1,6 +1,9 @@
 <template>
   <nav>
     <router-link :to="{name: 'home' }">Home</router-link> |
+    <router-link :to="{name: 'categories' }">Categories</router-link> |
+    <router-link :to="{name: 'area' }">Area</router-link> |
+    <router-link :to="{name: 'ingredients' }">Ingedient</router-link> |
   </nav>
   <router-view/>
 </template>
