@@ -1,13 +1,32 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import FoodCategoryView from '../views/Meals/FoodCategoryView.vue'
 import CategoryView from '../views/Meals/CategoryView.vue'
+import AreaView from '../views/Meals/AreaView.vue'
+import IngredientView from '../views/Meals/IngredientView.vue'
 
 
 const routes = [
   {
     path: '/',
     name: 'home',
+    component: FoodCategoryView
+  },
+  {
+    path: '/categories',
+    name: 'categories',
     component: CategoryView
   },
+  {
+    path: '/area',
+    name: 'area',
+    component: AreaView
+  },
+  {
+    path: '/ingredients',
+    name: 'ingredients',
+    component: IngredientView
+  }
+
   
 ]
 
