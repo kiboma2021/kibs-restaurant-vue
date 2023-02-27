@@ -2,7 +2,7 @@
 
     <h1>Food Categories</h1>
     <hr>
-    <div>
+    <div v-if="categories.categories">
         <table>
             <thead>
                 <tr>
@@ -20,7 +20,10 @@
 
         </table>
         
+    </div>
 
+    <div v-else>
+        <h5>Loading....</h5>
     </div>
   
 </template>
