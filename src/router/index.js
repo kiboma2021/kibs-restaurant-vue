@@ -4,7 +4,7 @@ import CategoryView from '../views/Meals/CategoryView.vue'
 import AreaView from '../views/Meals/AreaView.vue'
 import IngredientView from '../views/Meals/IngredientView.vue'
 import CategoryDetailView from '../views/Meals/CategoryDetailsView.vue'
-
+import NotFound from '../views/NotFound.vue'
 
 
 const routes = [
@@ -37,6 +37,11 @@ const routes = [
   {
     path: '/foodcategories',
     redirect: '/'
+  },
+  {
+    path: '/:catchAll(.*)',
+    name: NotFound,
+    component: NotFound
   }
 
   
