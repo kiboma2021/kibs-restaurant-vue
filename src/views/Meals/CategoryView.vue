@@ -1,7 +1,7 @@
 <template>
   <h1>Food Categories</h1>
-  <div v-if="foodcategories.meals">
-    <div v-for="category in foodcategories.meals" :key="category.strCategory">
+  <div v-if="foodcategories.length">
+    <div v-for="category in foodcategories" :key="category.strCategory">
         {{ category.strCategory }}
     </div>
   </div>
@@ -18,7 +18,7 @@ export default {
         }
     },
     mounted(){
-        fetch('https://www.themealdb.com/api/json/v1/1/list.php?c=list')
+        fetch('http://localhost:3000/meals')
         .then(res => res.json())
         .then(data => this.foodcategories = data)
         .catch(err => console.log(err.message))
