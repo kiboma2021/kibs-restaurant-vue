@@ -1,11 +1,12 @@
 <template>
     <h1>Food Details</h1>
-    <p>Id is: {{ $route.params.id }}</p>
+    <p>Id is: {{ id}}</p>
   
 </template>
 
 <script>
 export default {
+    props: ['id']
 
 }
 </script>
