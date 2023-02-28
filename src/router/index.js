@@ -33,6 +33,10 @@ const routes = [
     name: 'categoryDetails',
     component: CategoryDetailView,
     props: true
+  },
+  {
+    path: '/foodcategories',
+    redirect: '/'
   }
 
   
