@@ -31,7 +31,8 @@ const routes = [
   {
     path: '/:id',
     name: 'categoryDetails',
-    component: CategoryDetailView
+    component: CategoryDetailView,
+    props: true
   }
 
   
