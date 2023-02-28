@@ -12,7 +12,9 @@
             </thead>
             <tbody v-for="category in categories.categories" :key="category.idCategory">
                 <tr>
-                    <td>{{ category.strCategory }}</td>
+                    <router-link :to="{name: 'categoryDetails', params: {id:category.idCategory}}">
+                        <td>{{ category.strCategory }}</td>
+                    </router-link>
                     <td>{{ category.strCategoryDescription }}</td>
                 </tr>
 
