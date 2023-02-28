@@ -3,6 +3,8 @@ import FoodCategoryView from '../views/Meals/FoodCategoryView.vue'
 import CategoryView from '../views/Meals/CategoryView.vue'
 import AreaView from '../views/Meals/AreaView.vue'
 import IngredientView from '../views/Meals/IngredientView.vue'
+import CategoryDetailView from '../views/Meals/CategoryDetailsView.vue'
+
 
 
 const routes = [
@@ -25,6 +27,11 @@ const routes = [
     path: '/ingredients',
     name: 'ingredients',
     component: IngredientView
+  },
+  {
+    path: '/:id',
+    name: 'categoryDetails',
+    component: CategoryDetailView
   }
 
   
